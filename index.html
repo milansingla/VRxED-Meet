@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Panel | VRxED - Medical Education Technology</title>
+    <meta name="description" content="VRxED's browser-based meeting solution with live translation in 50+ languages. Enterprise-grade video conferencing for medical education and healthcare training." />
+    <meta name="author" content="VRxED" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Meeting Panel | VRxED Technology Solutions" />
+    <meta property="og:description" content="Browser-based meeting solution with live translation. Enterprise-grade video conferencing for medical education." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/vrxed-logo-D-zj4c5Z.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vrxed" />
+    <meta name="twitter:image" content="/assets/vrxed-logo-D-zj4c5Z.png" />
+
+    <!-- Static hosting deep-link support (e.g., /auth on refresh):
+         404.html redirects to /?redirect=<path>, and this restores the original route. -->
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var redirect = params.get('redirect');
+          if (!redirect) return;
+
+          // Restore original path without reloading
+          window.history.replaceState(null, '', decodeURIComponent(redirect));
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
+    <link rel="canonical" href="/" />
+    <script type="module" crossorigin src="/assets/index-CKs1ZXZU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-XqU1SHJH.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

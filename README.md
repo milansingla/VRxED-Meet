@@ -2,7 +2,7 @@
 
 **Meeting Panel | VRxED - Medical Education Technology**
 
-![VRxED-Meet](https://lovable.dev/opengraph-image-p98pqg.png)
+![VRxED-Meet](/assets/vrxed-logo-D-zj4c5Z.png)
 
 ## Overview
 

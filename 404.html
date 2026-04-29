@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <script>
+      // SPA deep-link fallback for static hosting:
+      // Redirect unknown paths to /?redirect=<original-path>, then index.html restores it.
+      (function () {
+        try {
+          var loc = window.location;
+          var params = new URLSearchParams(loc.search);
+          if (params.has('redirect')) return;
+
+          var target = loc.pathname + loc.search + loc.hash;
+          // Avoid redirect loops on root
+          if (!target || target === '/') return;
+
+          loc.replace('/?redirect=' + encodeURIComponent(target));
+        } catch (e) {
+          // If anything goes wrong, just go home.
+          window.location.replace('/');
+        }
+      })();
+    </script>
+  </body>
+</html>
