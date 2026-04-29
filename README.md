@@ -8,6 +8,10 @@
 
 VRxED-Meet is a browser-based meeting solution tailored specifically for medical education and healthcare training. It offers enterprise-grade video conferencing combined with real-time translation capabilities, breaking down language barriers in the medical field.
 
+## Powered by BioMistral
+
+The intelligence driving our real-time medical translation and transcription is built upon the **BioMistral** model. To ensure the highest level of precision for medical professionals, we have extensively retrained and fine-tuned this model on vast datasets of medical literature, clinical terminology, and healthcare dialogues. This significant enhancement maximizes accuracy, providing context-aware and medically sound translations that healthcare professionals can trust during critical collaborations and educational sessions.
+
 ## Features
 
 - **Live Translation**: Real-time translation in 50+ languages to facilitate global medical collaboration and education.
